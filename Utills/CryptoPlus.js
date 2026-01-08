@@ -14,24 +14,24 @@ function CryptoPlus() {
 
       cryptoList.innerHTML = `
         <div class="market__box">
-          <span class="market__title"><i class="ri-eth-line"></i> ETH/USD</span>
-          <span class="market__money"> $${ethereum}</span>
+          <p class="market__title"><i class="ri-eth-line"></i> ETH/USD</p>
+          <p class="market__money"> $${ethereum}</p>
         </div>
          <div class="market__box">
-          <span class="market__title"> <i class="ri-btc-fill"></i> BTC/USD</span>
-          <span class="market__money"> $${bitcoin}</span>
+          <p class="market__title"> <i class="ri-btc-fill"></i> BTC/USD</p>
+          <p class="market__money"> $${bitcoin}</p>
         </div>
         <div class="market__box">
-          <span class="market__title"><i class="ri-bnb-line"></i> USDT/USD</span>
-          <span class="market__money">$${tether}</span>
+          <p class="market__title"><i class="ri-bnb-line"></i> USDT/USD</p>
+          <p class="market__money">$${tether}</p>
         </div>
         <div class="market__box">
-          <span class="market__title"><i class="ri-nft-line"></i> BNB/USD</span>
-          <span class="market__money">$${binanceCoin}</span>
+          <p class="market__title"><i class="ri-nft-line"></i> BNB/USD</p>
+          <p class="market__money">$${binanceCoin}</p>
         </div>
       `;
     });
 }
 
 CryptoPlus();
-setInterval(CryptoPlus, 10000);
+setInterval(CryptoPlus, 15000);
