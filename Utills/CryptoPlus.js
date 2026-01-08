@@ -7,27 +7,27 @@ function CryptoPlus() {
   fetch(MARKET_API)
     .then((response) => response.json())
     .then((data) => {
-      const binanceCoinPrice = data.binancecoin.usd;
-      const bitcoinPrice = data.bitcoin.usd;
-      const ethereumPrice = data.ethereum.usd;
-      const tetherPrice = data.tether.usd;
+      const binanceCoin = data.binancecoin.usd;
+      const bitcoin = data.bitcoin.usd;
+      const ethereum = data.ethereum.usd;
+      const tether = data.tether.usd;
 
       cryptoList.innerHTML = `
         <div class="market__box">
           <span class="market__title"><i class="ri-eth-line"></i> ETH/USD</span>
-          <span class="market__money"> $${ethereumPrice}</span>
+          <span class="market__money"> $${ethereum}</span>
         </div>
          <div class="market__box">
           <span class="market__title"> <i class="ri-btc-fill"></i> BTC/USD</span>
-          <span class="market__money"> $${bitcoinPrice}</span>
+          <span class="market__money"> $${bitcoin}</span>
         </div>
         <div class="market__box">
           <span class="market__title"><i class="ri-bnb-line"></i> USDT/USD</span>
-          <span class="market__money">$${tetherPrice}</span>
+          <span class="market__money">$${tether}</span>
         </div>
         <div class="market__box">
           <span class="market__title"><i class="ri-nft-line"></i> BNB/USD</span>
-          <span class="market__money">$${binanceCoinPrice}</span>
+          <span class="market__money">$${binanceCoin}</span>
         </div>
       `;
     });
